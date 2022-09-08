@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% block title %}
+QUIZ-E-PRENEUR
+{% endblock title %}
+
+
+{% block body %}
+
+
+<!-- REGISTRATION FORM -->
+<form method='POST' action="question">
+    {% csrf_token %}
+    <div>
+        <h2>
+            <strong>
+                REGISTER FOR YOUR QUIZ
+            </strong>
+        </h2>
+    </div>
+    <div class="text-center">
+        <form>
+            <div>
+                <label for="myName">Name</label>
+                <input type="text" name="htmlname" class="form-control" id="myName" placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" name="htmlemail" class="form-control" id="exampleFormControlInput1"
+                    placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Grade</label>
+                <select class="form-control" name="htmlgrade" id="exampleFormControlSelect1">
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">State</label>
+                <select class="form-control" name="htmlstate" id="exampleFormControlSelect1">
+                    <option>UP</option>
+                    <option>WEST BENGAL</option>
+                    <option>DELHI</option>
+                    <option>RAJASTHAN</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Tell us something about yourself</label>
+                <textarea class="form-control" name="htmlabout" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-primary" value="REGISTER">
+            </div>
+        </form>
+
+    </div>
+
+</form>
+
+<!-- REGISTRATION FORM -->
+
+<!-- QUIZ QUESTIONS -->
+
+
+<!-- <div class="text-center">
+
+    <div>
+        <strong> 1. Ronald Wayne is co-founder of which company ? </strong>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="defaultCheck1" name="o1" />
+            <label class="form-check-label" for="defaultCheck1">
+                HP
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="defaultCheck2" name="o2" />
+            <label class="form-check-label" for="defaultCheck2">
+                Skype
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="defaultCheck3" name="o3" />
+            <label class="form-check-label" for="defaultCheck3">
+                Apple
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="defaultCheck4" name="o4" />
+            <label class="form-check-label" for="defaultCheck4">
+                Twitter
+            </label>
+        </div>
+    </div>
+
+    
+
+    <div>
+        <input type="submit" class="btn btn-primary" value="SUBMIT YOUR ANSWERS">
+    </div>
+
+</div> -->
+
+
+<!-- QUIZ QUESTIONS -->
+
+
+{% endblock body %}

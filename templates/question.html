@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+
+{% block title %}QUESTIONS{% endblock title %}
+{% block body %}
+
+<h1>QUESTIONS OF YOUR QUIZ</h1>
+
+<!-- QUIZ QUESTIONS -->
+
+<form action="points" method='POST'>
+
+    {% csrf_token %}
+
+    <div class="text-center">
+
+        <!-- 
+        questions in radio form 
+        <div>
+            <strong> 1. Ronald Wayne is co-founder of which company ? </strong>
+    
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="defaultCheck1" name="o1" />
+                <label class="form-check-label" for="defaultCheck1">
+                    HP
+                </label>
+            </div>
+    
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="defaultCheck2" name="o2" />
+                <label class="form-check-label" for="defaultCheck2">
+                    Skype
+                </label>
+            </div>
+    
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="defaultCheck3" name="o3" />
+                <label class="form-check-label" for="defaultCheck3">
+                    Apple
+                </label>
+            </div>
+    
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="defaultCheck4" name="o4" />
+                <label class="form-check-label" for="defaultCheck4">
+                    Twitter
+                </label>
+            </div>
+        </div> -->
+
+        <!-- QUESTIONS IN SELECT FORM -->
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">1. Ronald Wayne is co-founder of which company ? </label>
+            <select class="form-control" name="q1" id="exampleFormControlSelect1">
+                <option>Facebook</option>
+                <option>Apple</option>
+                <option>IBM</option>
+                <option>HP</option>
+                <option>MicroSoft</option>
+            </select>
+        </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">2. Which of the following is a planet ? </label>
+            <select class="form-control" name="q2" id="exampleFormControlSelect1">
+                <option>Tomato</option>
+                <option>Banana</option>
+                <option>Table</option>
+                <option>Earth</option>
+                <option>Laptop</option>
+            </select>
+        </div>  <div class="form-group">
+            <label for="exampleFormControlSelect1">3. How many corners does a square have ? </label>
+            <select class="form-control" name="q3" id="exampleFormControlSelect1">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>  <div class="form-group">
+            <label for="exampleFormControlSelect1">4. Which of the following is not a country ? </label>
+            <select class="form-control" name="q4" id="exampleFormControlSelect1">
+                <option>Australia</option>
+                <option>India</option>
+                <option>West Bengal</option>
+                <option>Canada</option>
+                <option>United States</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">5. How many minutes in one hour ? </label>
+            <select class="form-control" name="q5" id="exampleFormControlSelect1">
+                <option>15</option>
+                <option>30</option>
+                <option>45</option>
+                <option>60</option>
+                <option>75</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" class="btn btn-primary" value="SUBMIT YOUR ANSWERS">
+        </div>
+
+    </div>
+
+</form>
+
+
+
+<!-- QUIZ QUESTIONS -->
+
+
+{% endblock body %}
