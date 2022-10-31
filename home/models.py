@@ -13,9 +13,9 @@ class registration(models.Model):
     score = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.name
+        return self.name + "  -->  " + self.email
 
-# #
+
 #  #   def __str__(self):
 #   #      return self.name + " - - " + self.blogcontent
 
